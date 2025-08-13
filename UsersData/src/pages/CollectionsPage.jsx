@@ -18,6 +18,7 @@ const CollectionsPage = () => {
           throw new Error('Invalid or expired link');
         }
         const data = await response.json();
+        console.log("data", data);
         setUserData(data);
       } catch (err) {
         setError(err.message);
