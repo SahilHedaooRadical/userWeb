@@ -12,7 +12,7 @@ const CollectionsPage = () => {
     const fetchUserCollections = async () => {
       try {
         const response = await fetch(
-          `http://192.168.1.15:5000/api/collections/public/${access_token}`
+          `https://money-collection-backend.syolosoft.com/api/collections/public/${access_token}`
         );
         if (!response.ok) {
           throw new Error('Invalid or expired link');
